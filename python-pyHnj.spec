@@ -34,7 +34,7 @@ install -d $RPM_BUILD_ROOT%{py_sitedir}
 
 python setup.py install \
 	--root=$RPM_BUILD_ROOT
-	
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
