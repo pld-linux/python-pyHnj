@@ -2,7 +2,7 @@
 %define 	module	pyHnj
 
 Summary:	pyHnj - a Python wrapper for libhnj library
-Summary(pl.UTF-8):   pyHnj - pythonowy wrapper dla biblioteki libhnj
+Summary(pl.UTF-8):	pyHnj - pythonowy wrapper dla biblioteki libhnj
 Name:		python-%{module}
 Version:	0.6
 Release:	2
