@@ -12,8 +12,8 @@ Source0:	http://hkn.eecs.berkeley.edu/~dyoo/python/pyHnj/%{module}-%{version}.ta
 # Source0-md5:	1e777539150c5b6a853dce3a10e64398
 URL:		http://hkn.eecs.berkeley.edu/~dyoo/python/pyHnj/
 BuildRequires:	python-devel >= 1:2.5
-%pyrequires_eq	python-modules
 BuildRequires:	rpm-pythonprov
+%pyrequires_eq	python-modules
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
