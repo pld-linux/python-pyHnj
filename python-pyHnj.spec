@@ -5,13 +5,15 @@ Summary:	pyHnj - a Python wrapper for libhnj library
 Summary(pl.UTF-8):	pyHnj - pythonowy wrapper dla biblioteki libhnj
 Name:		python-%{module}
 Version:	0.6
-Release:	2
+Release:	3
 License:	GPL v2
 Group:		Libraries/Python
 Source0:	http://hkn.eecs.berkeley.edu/~dyoo/python/pyHnj/%{module}-%{version}.tar.gz
 # Source0-md5:	1e777539150c5b6a853dce3a10e64398
 URL:		http://hkn.eecs.berkeley.edu/~dyoo/python/pyHnj/
+BuildRequires:	python-devel >= 1:2.5
 %pyrequires_eq	python-modules
+BuildRequires:	rpm-pythonprov
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -42,4 +44,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS README.txt
 %attr(755,root,root) %{py_sitedir}/*.so
+%{py_sitedir}/pyHnj-*.egg-info
+%dir %{_datadir}/pyHnj
 %{_datadir}/pyHnj/hyphen.mashed
