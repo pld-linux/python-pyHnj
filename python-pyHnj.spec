@@ -11,6 +11,7 @@ Group:		Libraries/Python
 Source0:	http://hkn.eecs.berkeley.edu/~dyoo/python/pyHnj/%{module}-%{version}.tar.gz
 # Source0-md5:	1e777539150c5b6a853dce3a10e64398
 URL:		http://hkn.eecs.berkeley.edu/~dyoo/python/pyHnj/
+BuildRequires:	rpmbuild(macros) >= 1.710
 BuildRequires:	python-devel >= 1:2.5
 BuildRequires:	rpm-pythonprov
 %pyrequires_eq	python-modules
